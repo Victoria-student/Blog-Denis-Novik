@@ -1,24 +1,4 @@
 
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-        url('../fonts/Gilroy-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-        url('../fonts/Gilroy-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
 *::before,
 *::after {
@@ -685,12 +665,39 @@ right: 0;
     }
 
 
+    .blog__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .photo__blog-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        max-width: 100%;
+        -o-object-fit: cover;
+        object-fit: none;
+        aspect-ratio: 1/1.5;
+    }
+
+    
+
+
+
     .about {
         padding: 120px 0 40px 0;
     }
-
-
-
 
     .programm {
         margin-bottom: 50px;
@@ -703,18 +710,62 @@ right: 0;
     .programm:nth-child(4) {
         margin-bottom: 0px;
     }
+    
 
 }
 
 
     
     @media screen and (max-width: 479.98px) {
-    /* стили для телефонов - начало */
+        [class*="__container"] {
+            max-width: none;
+        }
+
+        .blog__content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+        }
+
+  
     
     }
 
     @media screen and (max-width: 375px) {
-      
+        .blog__content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+
+        .blog__name{
+            margin-bottom: 10px;
+        }
+        .programm-rating{
+            margin-top:0;
+        }
+        .programm-rating img{
+            margin-top: 18px;
+            max-block-size: 20px;
+        }
+
+        .programm-rating--mt img{
+            margin-top: 40px;
+        }
        
     }
 }
