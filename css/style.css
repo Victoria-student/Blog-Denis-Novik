@@ -714,7 +714,9 @@ right: 0;
     position: relative;
     top: 152px;
     left: 245px;
-    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
 
 }
 .eng-site__item{
