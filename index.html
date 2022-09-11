@@ -10,8 +10,10 @@
 <body>
 
     <div class="wrapper">
-        <header class="header">
-        <div class="header__container">
+
+
+     <header class="header">
+        <div class="header-container">
         <div class="header__menu menu">
         <nav class="menu__body">
             <ul class="menu__list"> 
@@ -32,12 +34,14 @@
               <span></span>
             </label>
         
-            <nav class="menu__box">
-                <li class="menu__item "><a href="#" class="menu__link menu__link--active ">Home</a></li>
+            <nav class="menu">
+             <ul class="menu__box">
+                <li class="menu__item"><a href="#" class="menu__link menu__link--active ">Home</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li> 
+            </ul>
             </nav>
             <div class="translate-site">
                 <span class="ru-site__item"><a href="">RU</a></span>
@@ -48,11 +52,12 @@
               
 
 <main class="main">
+
     <section class="blog">
-        <div class="blog__container">
-            <div class="blog__content">
-             <h2 class="blog__name">Denis<br>Novik</h2>
-            <h1 class="blog__info">
+        <div class="blog-container">
+            <div class="author">
+             <h2 class="author__title">Denis<br>Novik</h2>
+            <h1 class="author__subtitle">
                 <span class="prof__info">UX | UI designer</span> 
                 <span class="data__info">24 years old, Minsk</span> 
             </h1>
@@ -61,15 +66,19 @@
                 <span class="eng-site">ENG</span>
             </div>
         </div>
-        <div class="photo-blog">
-              <img class="photo__blog" src="img/blog/photo-blog.png">
+        <div class="photo">
+            <picture class="photo__blog-mobile">
+                <source srcset="/img/blog/photo-blog-mobile.png" media="(max-width: 500px)">
+                <img class="photo__blog" src="img/blog/photo-blog.png">
+            </picture>
+              
         </div>
     </div>
 </section>
 
 
 <section class="about">
-    <div class="about__container">
+    <div class="about-container">
         <div class="about-inner">
             <h2 class="about-inner__title">About me</h2>
             <p class="about-inner__subtitle">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
@@ -81,9 +90,9 @@
 </section>
 
 <section class="skills">
-    <div class="skills__container">
+    <div class="skills-container">
         <div class="skills-inner">
-            <h3 class="skills__title">Skills</h3>
+            <h3 class="skills__title ">Skills</h3>
             <p class="skills__subtitle" >I work in such programs as</p>
         </div>
          <div class="skills-programms">
@@ -134,7 +143,7 @@
 
 
 <section class="portfolio">
-    <div class="portfolio__container">
+    <div class="portfolio-container">
         <h3 class="portfolio-name">Portfolio</h3>
         <div class="porfolio-block">
             <div class="portfolio__img">
@@ -156,12 +165,12 @@
 
 
 <section class="footer">
-    <div class="footer__container">
+    <div class="footer-container">
         <h3 class="footer__title">Contacts</h3>
         <p class="footer__subtitle">Want to know more or just chat? 
             You are welcome!</p>
-            <div class="footer__button">
-              <a href="#" class="btn">Send message</a>
+            <div class="button">
+              <a href="#" class="btn btn--radial-out  ">Send message</a>
              </div>
         <nav class="social-media">
                 <ul class="social-media__list">
@@ -183,11 +192,5 @@
 
 </div>
     
-
-
-
-
-
-
 </body>
 </html>
