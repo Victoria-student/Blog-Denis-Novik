@@ -275,7 +275,6 @@ content: '|';
 }
 .eng-site {
 font-weight: bold;
-
 }
 
 .photo {
@@ -719,15 +718,33 @@ visibility: visible;
 right: 0;
 }
 
+.ru-site__item, .eng-site__item {
+    display: inline-block;
+    position: relative;
+    top: 152px;
+    left: 245px;
+    transform: rotate(270deg);
 
-.translate-site{
-position: relative;
-visibility: visible;
-z-index: 556;
-bottom: 0;
-left: 0;
+}
+.eng-site__item{
+    font-weight: 700;
+    top: 112px;
+    left: 211px;
 }
 
+.ru-site__item::after{
+    content: '|';
+    position: absolute;
+    top: -2px;
+    left: 26px;
+}
+
+
+.eng-site__link, .ru-site__link{
+    color: #000;
+}
+
+/* Хз либо сделать Ru eng позиционированием либо псевдоэлементом after я сделала 1 вариант */
 
 
 
